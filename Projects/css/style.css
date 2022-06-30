@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+}
+
+:root {
+  --primary-shade: #221640;
+  --para-color: #b9a1f7;
+  --helper-color: #2542ff;
+  --white: #fff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
+  width: 100%; /* this is the default make the width of the img tag element as 100%*/
+}
+
+li {
+  list-style-type: none; /*this is make the bullet of the list none */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--primary-shade);
+}
+
+.para {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--para-color);
+}
+
+.quote-para {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #7149d4;
+}
+
+.quote-writer {
+  font-size: 1.6rem;
+  font-family: "MonteCarlo", cursive;
+
+  line-height: 1.7;
+  font-weight: 400;
+  color: #7149d4;
+}
+
+/* --------------------
+ header and the navbar
+ -------------------- */
+
+.container {
+  max-width: 130rem; 
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.header {
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5.4rem;
+}
+
+navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo{
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+
+
+.logo:hover,
+.logo:active {
+  
+  color: rgb(162, 68, 221);
+  color: linear-gradient(90deg, rgba(106,63,251,0.9923319669664741) 23%, rgba(240,70,252,1) 67%);
+  transform: scale(1.5);
+  
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem; /*this is make a gap b/w the item in the navbar-list,this will not add any extra space after end of the item.*/
+  font-size: 1.5rem;
+}
+
+.navbar-list .btn-navbar {
+  padding: 1.2rem 2.4rem;
+  background-color: var(--white);
+  border: 1px solid var(--helper-color);
+  border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-list .navbarlink:hover,
+.navbar-list .navbarlink:active {
+  color: var(--helper-color);
+}
+
+.btn-navbar:hover,
+.btn-navbar:active {
+  background-color: var(--helper-color);
+  color: var(--white);
+}
+
+.navbarlink {
+  text-transform: uppercase;
+}
+
+/* ---------------------
+   mobile version of the navbar
+   --------------------- */
+
+.mobile-navbar-icon {
+  font-size: 4rem;
+  color: var(--primary-shade);
+}
+
+.mobile-navbar-btn {
+  display: none;
+}
+
+.mobile-navbar-icon[name="close-outline"] {
+  display: none;
+}
+
+.section {
+  padding: 9.6rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 1.6rem 3.2rem;
+  /* margin-left: 0.25rem; this is from my side */
+  border-radius: 10rem;
+  background-color: var(--helper-color);
+  color: var(--white);
+  transition: all 0.2s linear;
+}
+
+.btn:hover,
+.btn:active {
+  transform: scale(1.05);
+}
+
+/* ---------------------
+   Hero section style
+   --------------------- */
+
+.section-hero {
+  position: relative;
+}
+
+.section-hero::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 9.6rem;
+  right: 0;
+  height:80%;
+  width: 40%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 28%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(9, 9, 121, 1) 120%
+  );
+  border-radius: 4rem;
+  z-index: -1;
+}
+
+
+
+.primary-heading{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.section-hero .para{
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+}
+
+.hero-icon{
+    margin-top: 4.2rem;
+}
+
+.hero-icon .icon{
+    font-size: 6rem;
+    position: relative;
+}
+
+.hero-icon .icon::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 65%;
+    background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 28%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(9, 9, 121, 1) 120%
+  );
+  border-radius: 4rem;
+  opacity: 0.7;
+}
+
+.section-hero h2{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.section-hero .hero-icon .para{
+    line-height: 1.6;
+    font-family: 1.4rem;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.hero-image{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero-image img{
+    height: 90%;
+    box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.hero-img-overlay{
+    position: absolute;
+    bottom: 0;
+    left: -7%;
+    background-color: #221640;
+    padding: 3rem 5rem;
+    margin: 0;
+}
+
+.hero-img-overlay .para{
+    color: #fff;
+}
+
+.hero-img-overlay .quote-writer{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* --------------------------
+footer of the page
+----------------------------- */
+
+
+.footer-class p{
+   
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+footer{
+    padding: 1.5rem;
+    background-color: #b9a1f7;
+}
+.footer-class .para{
+    padding-bottom: 2rem;
+    color: #221640;
+}
+
+.footer-class .footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9.6rem;
+    
+    
+  
+}
+
+.footer-icon{
+    font-size: 8rem;
+}
+
+.footer-icon:hover,
+.footer-icon:active{
+    color: #fff;
+}

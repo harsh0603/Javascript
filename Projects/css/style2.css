@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  height: 100vh; /*this is the viewpoint height of the screen and 
+                      this different from % unit as it is relative to the parent bit vh and vw does not relate to the parent*/
+
+  background-image: url("laptop-background.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-bar {
+  display: flex;
+  height: 20%;
+}
+
+.navbar-left {
+  flex-basis: 70%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  
+}
+.navbar-right {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.left-inner {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px 15px 20px;
+}
+
+.logo {
+  height: 6rem;
+  width: 6rem;
+}
+
+.left-inner ul {
+  margin-left: 230px;
+  z-index: 2;
+}
+
+.left-inner ul li {
+  margin: 0 30px;
+
+  display: inline-block;
+}
+.left-inner ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 0.2s linear;
+}
+
+.left-inner .nav-item:hover,
+.left-inner .nav-item:active {
+  color: #fff;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  padding: 10px 15px;
+  border-radius: 3rem;
+}
+
+.navbar-right ul{
+    float:right;
+    padding-left: 150px;
+}
+
+.navbar-right ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 40px;
+    align-items: center;
+    
+}
+
+.nav-icon{
+    font-size: 2.5rem;
+}

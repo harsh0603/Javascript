@@ -1,0 +1,37 @@
+.parent{
+   height: 20rem;
+   width: 30rem;
+   background-color: rgb(2, 166, 231);
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   position: relative;
+}
+
+.child1{
+    height: 5rem;
+    width: 20rem;
+    /* justify-self: center; */
+    background-color: green;
+    position: absolute;   /*this absolute position is relative to the parent class*/
+    top: 0;
+    left: 0;
+}
+
+.child2{
+    height: 5rem;
+    width: 20rem;
+    /* justify-self: center; */
+    background-color: orange;
+}
+
+.child3{
+    height: 5rem;
+    width: 20rem;
+    /* justify-self: center; */
+    background-color: pink;
+}
+
+h1{
+    text-align: center;
+}

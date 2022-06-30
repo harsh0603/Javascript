@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Big Shoulders Display
+Author: Patric King
+Url: https://fonts.google.com/specimen/Big+Shoulders+Display
+
+Font: Coustard
+Author: Vernon Adams
+Url: https://fonts.google.com/specimen/Coustard

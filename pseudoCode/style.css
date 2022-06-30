@@ -1,0 +1,24 @@
+.required::after{
+
+    content: "*";
+
+}
+
+
+    [data-tooltip]{
+        position: relative;
+    }
+
+    [data-tooltip]:hover::after{
+
+        /* content: attr(data-tooltip); */
+        content: 'submit only once';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        margin-top: 5px ;
+        padding: 5px;
+        background-color: dimgray;
+        color: #fff;
+    }
