@@ -150,7 +150,12 @@ for(var i=0;i<document.querySelectorAll(".drum").length;i++){
 
     function buttonAnimation(btn){
         var activeButton = document.querySelector("."+btn);   //cancatinating the class (.w or .j or .k)
-        activeButton.classList.add("pressed");                           
+        activeButton.classList.add("pressed");  
+
+
+        setTimeout(function(){
+            activeButton.classList.remove("pressed"); //this to make the unselect buttons
+        },100)                         
 
     }
 
